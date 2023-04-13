@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Convertisseur</class>
+ <widget class="QMainWindow" name="Convertisseur">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>569</width>
+    <height>352</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Convertisseur</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(192, 191, 188);
+color: rgb(255, 255, 255);
+background-color: rgb(36, 31, 49);
+font: 11pt &quot;Quicksand&quot;;
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>30</y>
+      <width>20</width>
+      <height>271</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>150</y>
+      <width>561</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>0</y>
+      <width>191</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>    CONVERTISSEUR</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="Line" name="line_3">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>20</y>
+      <width>561</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Devise</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>30</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Poids</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>160</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Temperature</string>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="doubleSpinBoxDevise">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>60</y>
+      <width>67</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <double>-999999.000000000000000</double>
+    </property>
+    <property name="maximum">
+     <double>999999.989999999990687</double>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="doubleSpinBox_2">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>120</y>
+      <width>67</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <double>-999999.000000000000000</double>
+    </property>
+    <property name="maximum">
+     <double>999999.989999999990687</double>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="doubleSpinBox_3Poids">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>60</y>
+      <width>67</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <double>-999999.000000000000000</double>
+    </property>
+    <property name="maximum">
+     <double>999999.989999999990687</double>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="doubleSpinBox_4">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>120</y>
+      <width>67</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <double>-999999.000000000000000</double>
+    </property>
+    <property name="maximum">
+     <double>999999.989999999990687</double>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="doubleSpinBox_7Temperature">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>190</y>
+      <width>67</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <double>-999999.000000000000000</double>
+    </property>
+    <property name="maximum">
+     <double>999999.989999999990687</double>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="doubleSpinBox_8">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>250</y>
+      <width>67</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <double>-999999.000000000000000</double>
+    </property>
+    <property name="maximum">
+     <double>999999.989999999990687</double>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBoxLabel3">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>60</y>
+      <width>79</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>g</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>kg</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>lb</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>oz</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ct</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>t</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>q</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>st</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="comboBoxLabel4">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>120</y>
+      <width>79</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>g</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>kg</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>lb</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>oz</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ct</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>t</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>q</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>st</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="comboBoxLabel7">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>190</y>
+      <width>79</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="editable">
+     <bool>false</bool>
+    </property>
+    <item>
+     <property name="text">
+      <string>celsius</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>fahrenheit</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>kelvin</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>rankine</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="comboBoxLabel8">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>250</y>
+      <width>79</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>celsius</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>fahrenheit</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>kelvin</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>rankine</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="comboBoxLabel1">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>60</y>
+      <width>79</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>USD</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>EUR</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>JPY</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>CNY</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>GBP</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>CHF</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>AUD</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>CAD</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>SGD</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>HKD</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>CFA</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="comboBoxLabel2">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>120</y>
+      <width>79</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>USD</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>EUR</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>JPY</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>CNY</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>GBP</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>CHF</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>AUD</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>CAD</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>SGD</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>HKD</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>CFA </string>
+     </property>
+    </item>
+   </widget>
+   <widget class="Line" name="line_4">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>0</y>
+      <width>21</width>
+      <height>301</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_5">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>290</y>
+      <width>561</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>90</y>
+      <width>88</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(46, 194, 126);</string>
+    </property>
+    <property name="text">
+     <string>Convertir</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_4">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>220</y>
+      <width>88</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(46, 194, 126);</string>
+    </property>
+    <property name="text">
+     <string>Convertir</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>90</y>
+      <width>88</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(46, 194, 126);</string>
+    </property>
+    <property name="text">
+     <string>Convertir</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>569</width>
+     <height>24</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
